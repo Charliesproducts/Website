@@ -5,190 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charlie's Products</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: Arial, sans-serif;
-            scroll-behavior: smooth;
-            color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
 
         header {
-            background-color: #0d0d0d;
-            color: #fff;
-            padding: 2rem;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav {
-            background-color: transparent;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        nav a {
-            color: #fff;
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.2rem;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #4caf50;
-        }
-
-        section {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 50px;
-        }
-
-        .banner {
-            background: url('https://example.com/banner-image.jpg') no-repeat center center/cover;
-            text-align: center;
-            color: #fff;
-        }
-
-        .banner h2 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .products, .news, .about, .blog {
-            text-align: center;
-        }
-
-        .products {
-            background-color: #151515;
-        }
-
-        .about {
-            background-color: #202020;
-        }
-
-        .news {
-            background-color: #151515;
-        }
-
-        .blog {
-            background-color: #202020;
-        }
-
-        footer {
-            background-color: #0d0d0d;
+            background-color: #333;
             color: white;
+            padding: 10px;
             text-align: center;
-            padding: 1rem;
         }
 
         .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .container p {
-            margin-bottom: 20px;
-            font-size: 1.2rem;
+        h1 {
+            color: #333;
         }
 
-        @media screen and (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
+        .links-section {
+            margin-top: 40px;
+        }
 
-            nav a {
-                font-size: 1rem;
-                margin: 0 10px;
-            }
+        .links-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-            section {
-                padding: 30px;
-            }
+        .links-section li {
+            margin: 10px 0;
+        }
+
+        .links-section a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 18px;
+        }
+
+        .links-section a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header -->
     <header>
-        <h1>Charlie's Products</h1>
-        <p>Your Roblox Product Hub</p>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#products">Products</a>
-            <a href="#about">About</a>
-            <a href="#news">News</a>
-            <a href="#blog">Blog</a>
-        </nav>
+        <h1>Welcome to Charlie's Products!</h1>
     </header>
 
-    <!-- Banner Section -->
-    <section id="home" class="banner">
-        <h2>Welcome to Charlie's Products!</h2>
-        <p>Check out the latest and best-selling Roblox products below</p>
-    </section>
+    <div class="container">
+        <h2>About Us</h2>
+        <p>We are a Roblox product company offering a variety of products to enhance your experience. Check out our offerings and join our community!</p>
 
-    <!-- Products Section -->
-    <section id="products" class="products">
-        <div class="container">
-            <h2>Our Featured Products</h2>
-            <p><strong>Product 1:</strong> Gamepass Tool Handler</p>
-            <p><strong>Product 2:</strong> Blacklist script</p>
-            <p><strong>Product 3:</strong> Nametag with group rank</p>
-            <p><strong>Product 4:</strong> Sliding door Handler</p>
-            <p><strong>Product 5:</strong> Self Checkouts</p>
-            <p><strong>Product 6:</strong> Cafe Seats</p>
-            <p><strong>Product 7:</strong> Shop signs</p>
-            <p><strong>Product 8:</strong> Drinks pack</p>
-            <p><strong>Product 9:</strong> Cereal Pack/p>
+        <!-- Links Section -->
+        <div class="links-section">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="https://discord.com/your_discord_link" target="_blank">Join our Discord</a></li>
+                <li><a href="https://roblox.com/users/your_roblox_id/profile" target="_blank">Visit us on Roblox</a></li>
+            </ul>
         </div>
-    </section>
+    </div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Charlie's Products is a leading Roblox product company providing high-quality items for Roblox players.</p>
-        </div>
-    </section>
-
-    <!-- News Section -->
-    <section id="news" class="news">
-        <div class="container">
-            <h2>News & Updates</h2>
-            <p>Check out our latest updates on product releases and community events!</p>
-        </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog" class="blog">
-        <div class="container">
-            <h2>Blog</h2>
-            <p>Stay updated with our latest product news and tips!</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Charlie's Products. All rights reserved.</p>
-        <p>Follow us on <a href="#">Roblox</a> | <a href="#">Discord</a></p>
-    </footer>
-
-    <!--Start of Tawk.to Script-->
+<!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
@@ -200,10 +86,8 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
-<!--End of Tawk.to Script-->
-        })();
-    </script>
-
+<!--End of Tawk.to Script-->    
+    
 </body>
 </html>
 
