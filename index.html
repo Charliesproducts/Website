@@ -26,13 +26,10 @@
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
+            cursor: pointer;
         }
-        .banner {
-            background-color: #f4f4f4;
-            padding: 50px;
-            text-align: center;
-        }
-        .products, .news {
+        .section {
+            display: none;
             padding: 20px;
             text-align: center;
         }
@@ -44,30 +41,6 @@
             position: relative;
             bottom: 0;
             width: 100%;
-        }
-        .contact-form {
-            max-width: 400px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .links-section {
-            padding: 20px;
-            text-align: center;
-        }
-        .links-section ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .links-section li {
-            margin: 10px 0;
-        }
-        .links-section a {
-            text-decoration: none;
-            color: #007bff;
-            font-size: 18px;
-        }
-        .links-section a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
@@ -81,21 +54,24 @@
 
     <!-- Navigation -->
     <nav>
-        <a href="#">Home</a>
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="#blog">Blog</a>
+        <a onclick="showSection('home')">Home</a>
+        <a onclick="showSection('products')">Products</a>
+        <a onclick="showSection('about')">About</a>
+        <a onclick="showSection('contact')">Contact</a>
+        <a onclick="showSection('blog')">Blog</a>
+        <a onclick="showSection('links')">Links</a>
     </nav>
 
-    <!-- Banner -->
-    <section class="banner">
+    <!-- Sections -->
+
+    <!-- Home -->
+    <section id="home" class="section" style="display: block;">
         <h2>Welcome to Charlies Products!</h2>
         <p>Check out the latest and best-selling Roblox products below</p>
     </section>
 
-    <!-- Featured Products -->
-    <section id="products" class="products">
+    <!-- Products -->
+    <section id="products" class="section">
         <h2>Featured Products</h2>
         <div>
             <p><strong>Product 1:</strong> Cool Roblox T-shirt</p>
@@ -104,29 +80,14 @@
         </div>
     </section>
 
-    <!-- News & Updates -->
-    <section class="news">
-        <h2>News & Updates</h2>
-        <p>Check out our latest updates on product releases and community events!</p>
-    </section>
-
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section">
         <h2>About Us</h2>
         <p>Charlies Products is a leading Roblox product company providing high-quality items for Roblox players.</p>
     </section>
 
-    <!-- Links Section -->
-    <section id="links" class="links-section">
-        <h2>Links</h2>
-        <ul>
-            <li><a href="https://discord.com/your_discord_link" target="_blank">Join our Discord</a></li>
-            <li><a href="https://roblox.com/users/your_roblox_id/profile" target="_blank">Visit us on Roblox</a></li>
-        </ul>
-    </section>
-
-    <!-- Contact Form -->
-    <section id="contact">
+    <!-- Contact -->
+    <section id="contact" class="section">
         <h2>Contact Us</h2>
         <form class="contact-form">
             <label for="name">Name:</label>
@@ -143,15 +104,32 @@
     </section>
 
     <!-- Blog -->
-    <section id="blog">
+    <section id="blog" class="section">
         <h2>Blog</h2>
         <p>Stay updated with our latest product news and tips!</p>
+    </section>
+
+    <!-- Links -->
+    <section id="links" class="section">
+        <h2>Links</h2>
+        <p><strong>Follow us on:</strong></p>
+        <p><a href="https://www.roblox.com">Roblox</a></p>
+        <p><a href="https://discord.com">Discord</a></p>
     </section>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Charlies Products. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript to Switch Sections -->
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -166,6 +144,6 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
-
+    
 </body>
 </html>
