@@ -3,6 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlies Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .banner {
+            background-color: #f4f4f4;
+            padding: 50px;
+            text-align: center;
+        }
+        .products, .news {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charlie's Products</title>
     <style>
         body {
@@ -74,20 +127,87 @@
         </div>
     </div>
 
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/671159e02480f5b4f58f2bee/1iadse5s3';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->    
-    
 </body>
 </html>
+        
+    </style>
+</head>
+<body>
 
+    <!-- Header -->
+    <header>
+        <h1>Charlies Products</h1>
+        <p>Your Roblox Product Hub</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#blog">Blog</a>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h2>Welcome to Charlies Products!</h2>
+        <p>Check out the latest and best-selling Roblox products below</p>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="products">
+        <h2>Featured Products</h2>
+        <div>
+            <p><strong>Product 1:</strong> Cool Roblox T-shirt</p>
+            <p><strong>Product 2:</strong> Fancy Roblox Hat</p>
+            <p><strong>Product 3:</strong> Epic Roblox Tool</p>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <!-- News & Updates -->
+    <section class="news">
+        <h2>News & Updates</h2>
+        <p>Check out our latest updates on product releases and community events!</p>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Charlies Products is a leading Roblox product company providing high-quality items for Roblox players.</p>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Stay updated with our latest product news and tips!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Charlies Products. All rights reserved.</p>
+        <p>Follow us on <a href="#">Roblox</a> | <a href="#">Discord</a></p>
+    </footer>
+
+ 
+
+</body>
+</html>
